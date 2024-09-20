@@ -31,7 +31,7 @@ header{
   min-width: 5vh;
   padding: 1vw; /*枠のサイズ*/
   /*background-color:rgba(254, 230, 255, 0.7); /*背景の色*/
-  color: #2B2721; /*フォントの色*/
+  color: #446E72; /*フォントの色*/
   display: flex;
   flex-direction: row;
   z-index: 999; /*z座標に対して、位置を一番手前に指定する*/
@@ -77,7 +77,7 @@ nav ul li{
 }
 
 nav a{
-  color: #2B2721;
+  color: #446E72;
 }
 
 #wrapper {
@@ -272,17 +272,6 @@ section h2{
     transform: scale(0.97);
   }
 }
-/*@keyframes fuwafuwa {
-  0% {
-    transform:translate(0, 0) rotate(-2deg);
-  }
-  50% {
-    transform:translate(0, -5px) rotate(0deg);
-  }
-  100% {
-    transform:translate(0, 0) rotate(15deg);
-  }
-}*/
 
 #about{
   position:relative;
@@ -405,7 +394,7 @@ section h2{
 
 #kudamono{
   background-color: #E6E4E0;
-  height: 1000px;
+  height: 950px;
   text-align: center;
 }
 
