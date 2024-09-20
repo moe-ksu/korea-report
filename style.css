@@ -1,0 +1,562 @@
+*{
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.m-plus-rounded-1c-medium {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.m-plus-rounded-1c-bold {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header{
+  position: fixed;
+  top: 0; /*上はじから*/
+  left: 0; /*左端から*/
+  width: 100%; /*サイズ*/
+  min-width: 5vh;
+  padding: 1vw; /*枠のサイズ*/
+  /*background-color:rgba(254, 230, 255, 0.7); /*背景の色*/
+  color: #2B2721; /*フォントの色*/
+  display: flex;
+  flex-direction: row;
+  z-index: 999; /*z座標に対して、位置を一番手前に指定する*/
+}
+header h1{
+  font-size: 2.5vw;
+}
+header a{
+  font-size: 1.2vw;
+}
+
+h1{
+  margin-right: auto;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p,a,div{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #2B2721;
+}
+
+nav {
+  margin-right: 40px;
+}
+
+nav ul {
+  display: flex; /*横並びにする*/
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 2.5rem;
+}
+
+nav ul li{
+  margin: 0 .5rem;
+}
+
+nav a{
+  color: #2B2721;
+}
+
+#wrapper {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainVisual{
+  position:relative;
+}
+
+#mainVisual h1{
+  position: absolute;/*重ねたい子要素にabsolute*/
+  top: 3.5em;
+  left: 50%;
+  transform: translate(-50%,-50%);/*センター寄せの修正*/
+  color: #fff;
+  font-size: 6.2vw;
+  text-shadow:2px 2px 3px #555;
+  /*margin: 0!important;/*文字がずれている場合や*/
+  /*padding: 0!important;/*文字が折り返される場合*/
+}
+
+#mainVisual h2{
+  position: absolute;/*重ねたい子要素にabsolute*/
+  top: 9em;
+  left: 50%;
+  transform: translate(-50%,-50%);/*センター寄せの修正*/
+  color: #fff;
+  font-size: 3.3vw;
+  text-shadow:2px 2px 3px #555;
+  /*margin: 0!important;/*文字がずれている場合や*/
+  /*padding: 0!important;/*文字が折り返される場合*/
+}
+#mainVisual img{
+  width: 100%;
+}
+
+#home2{
+  background-color: #fcf9f5;
+  text-align: center;
+}
+/*.slide-container {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  height: 340px;
+  overflow: hidden;
+  flex-direction: column;
+}
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: slide-flow 20s infinite linear 1s both;
+}
+.slide{
+  width: 300px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+@keyframes slide-flow {
+     0% {transform: translateY(0);}
+ 100% {transform: translateY(-100%);}
+}*/
+.slide-container {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slide-wrapper {
+display: flex;
+animation: slide-flow 30s infinite linear 1s both;
+}
+.slide{
+width: 300px;
+object-fit:cover;
+border: 10px solid #000000;
+}
+@keyframes slide-flow {
+   0% {transform: translateX(0);}
+100% {transform: translateX(-100%);}
+}
+
+#home2 p{
+  writing-mode: vertical-rl;
+  display: inline-block;
+  height: 400px;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+#home2 img{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 40px;
+}
+
+section h2{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#info{
+  position: relative;
+  text-align: center;
+  background-color: #E6E4E0;
+  height: 2000px;
+}
+
+.ulsan{
+  position: absolute;
+  width: 300px;
+  top: 150px;
+  right: 200px;
+  margin-bottom: 1rem;
+  transform: rotate(8deg); /*画像を10度回転させる*/
+  box-shadow: 5px 5px 5px #888;
+}
+.ulsan2{
+  position: absolute;
+  width: 300px;
+  top: 100px;
+  left: 200px;
+  margin-bottom: 1rem;
+  transform: rotate(-5deg); /*画像を10度回転させる*/
+  box-shadow: 5px 5px 5px #888;
+}
+.ulsan3{
+  position: absolute;
+  width: 300px;
+  top: 160px;
+  left: 580px;
+  margin-bottom: 1rem;
+  transform: rotate(-1deg); /*画像を10度回転させる*/
+  box-shadow: 5px 5px 5px #888;
+}
+.ulsan4{
+  width: 300px;
+  margin: 10px 20px;
+  box-shadow: 5px 5px 5px #777;
+}
+
+.yoko{
+  display: flex;
+  padding: 0 50px;
+}
+.yoko2{
+  padding: 0 20px;
+}
+.balloon2 {
+  margin: auto; /*吹き出しを中央に位置*/
+  margin-top: 2rem; /*上の余白*/
+  display: flex; /*flexでレイアウト*/
+  justify-content: center; /*並列の左右方向の中央寄せ*/
+  position: relative;
+  max-width: 220px;
+  margin-bottom: 20px; /*下の余白*/
+  padding: .8em 1.2em;
+  border-radius: 30px; /*角を丸くする*/
+  background-color: #e3c8e7; /*吹き出しの背景色*/
+  color: #3d3d3d; /*吹き出しのテキストカラー*/
+}
+.balloon2::before {
+  position: absolute;
+  bottom: -15px;
+  width: 30px;
+  height: 15px;
+  background-color:#e3c8e7;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: '';
+}
+.ct {
+  animation: poyopoyo 2s ease-out infinite;
+  opacity: 1;
+  /*animation: fuwafuwa 1.5s ease-in infinite alternate;*/
+}
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.97);
+  }
+}
+/*@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-2deg);
+  }
+  50% {
+    transform:translate(0, -5px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(15deg);
+  }
+}*/
+
+#about{
+  position:relative;
+  height: 2500px;
+  background-color: #fcf9f5;
+}
+
+#about p{
+  text-align: center;
+}
+
+#cards{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.card{
+  width: 300px;
+  height: 400px;
+}
+
+.card:nth-child(2){
+  margin: 0 50px;
+}
+
+.picture img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.number{
+  font-size: large;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.number::before{
+  content:attr(data-number);
+  display: inline-block;
+  margin-right: 10px;
+  color: #498ee0;
+  border-bottom: 1px solid #498ee0;
+}
+
+.waku{
+  background: #fee9ee; 
+  box-shadow: #fceff2 0 0 10px 10px; 
+  margin-top:20px; 
+  font-size: 80%; 
+  padding: 5px 5px 5px 8px;
+}
+
+.all{
+  text-align: center;
+}
+.arte {
+  flex-grow: 1;
+  object-fit: cover;
+  height: 250px;
+  max-width: 400px;
+  margin: 0.2rem;
+  border-radius: 3px;
+}
+
+.etc1 img{
+  position:absolute;
+  top:1500px;
+  left:270px;
+  width:300px;
+  box-shadow:0 0 10px #999;
+}
+.etc1 p{
+  position:absolute;
+  top:1550px;
+  left:520px;
+  width:240px;
+  background:#fff;
+  padding:10px;
+  box-shadow:0 0 10px #999;
+  font-size:12px;
+  line-height:24px;
+}
+.etc2 img{
+  position:absolute;
+  top:1750px;
+  right:250px;
+  width:350px;
+  box-shadow:0 0 10px #999;
+}
+.etc2 p{
+  position:absolute;
+  top:1870px;
+  right:550px;
+  width:240px;
+  background:#fff;
+  padding:10px;
+  box-shadow:0 0 10px #999;
+  font-size:12px;
+  line-height:24px;
+}
+.etc3 img{
+  position:absolute;
+  top:2050px;
+  left:320px;
+  width:300px;
+  box-shadow:0 0 10px #999;
+}
+.etc3 p{
+  position:absolute;
+  top:2150px;
+  left:570px;
+  width:240px;
+  background:#fff;
+  padding:10px;
+  box-shadow:0 0 10px #999;
+  font-size:12px;
+  line-height:24px;
+}
+
+#kudamono{
+  background-color: #E6E4E0;
+  height: 1000px;
+  text-align: center;
+}
+
+.item{
+  overflow: hidden;
+  position: relative;
+}
+
+.item img{
+  border-radius: 5px; /*角を丸くする*/
+}
+.item .caption { /*文字設定*/
+	font-size: 100%;
+	color: #fff;
+  text-align: center;
+	padding-top: 15px;
+	/*padding-left:	0px;*/
+}
+.item .mask {
+	width: 84%; /*マスクの幅*/
+	height: 75%; /*マスクの高さ*/
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	opacity: 0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+  border-radius: 5px; /*角を丸くする*/
+	/*-webkit-*/transition:	all 0.6s ease; /*時間経過による変化（プロパティ　秒数　変化のさせ方*/
+}
+.item:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+	padding-top:		10px;	/* 右にずらす */
+}
+
+button {
+  /* ブラウザ特有のスタイルを無効に */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* 整える */
+  margin: 1em 0; /* 前後の隙間 */
+  padding: 1em 2em; /* 塗りの余白 */
+  font-size: 1em; /* フォントサイズ */
+  background-color: #d469bc; /* 背景色 */
+  color: #FFF; /* テキストカラー */
+  cursor: pointer; /* カーソルを指マークに */
+  border-radius: 10px; /* 角の丸み */
+  border: 0; /* 枠線を消す */
+  transition: 0.3s; /* ホバーの変化を滑らかに */
+}
+
+/* ホバー時（カーソルをのせた時）の見た目 */
+button:hover {
+  background-color: #c47ed4; /* 背景色 */
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 10px;
+  grid-template-rows: 280px 280px;
+  justify-content: center;
+}
+.item{
+  background-color: transparent;
+  color: #000;
+  padding: 20px;
+}
+
+.item img{
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+footer{
+  padding: 30px; /*枠のサイズ*/
+  background-color: #446E72;
+}
+.footer01{
+  display: flex;
+  justify-content: center;
+}
+.foot{
+  color: #E6E4E0;
+}
+.item2{
+  padding: 0 20px;
+
+}
+
+/*思い出ページ*/
+#kazoku{
+  text-align: center;
+}
+
+#kazoku h2{
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.heading03 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	text-align: center;
+}
+
+.heading03::before,
+.heading03::after {
+	content: '';
+	width: 70px;
+	height: 3px;
+	background-color: #f9bcd6;
+}
+
+.heading03::before {
+	margin-right: 20px;
+}
+.heading03::after {
+	margin-left: 20px;
+}
+
+#kazoku p {
+  margin-bottom: 3rem;
+}
+
+/*.heading {
+	position: relative;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.heading span {
+	position: relative;
+	z-index: 2;
+}
+
+.heading::before {
+	content: attr(data-en);
+	position: absolute;
+	transform: rotate(-5deg);
+	top: -50px;
+	left: 550px;
+	color: rgba(237, 110, 148, 0.6);
+	font-size: 40px;
+	font-weight: 400;
+	font-family: luxus-brut, cursive;
+	font-style: italic;
+}*/
